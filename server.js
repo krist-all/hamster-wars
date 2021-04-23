@@ -8,7 +8,7 @@ const matchWinners = require('./routes/matchWinners.js')
 const winners = require('./routes/winners.js');
 const losers = require('./routes/losers.js');
 
-const PORT = process.env.PORT || 1337;
+let PORT = process.env.PORT || 1337;
 const staticFolder = path.join(__dirname, 'static');
 
 app.use(express.json())
