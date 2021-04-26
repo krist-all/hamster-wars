@@ -17,7 +17,7 @@ const router = express.Router();
         data.id = document.id
         hamsters.push(data);
     });
-    res.send(hamsters); 
+    res.send(hamsters);
 })
 
 router.get('/random', async (req, res) => {
