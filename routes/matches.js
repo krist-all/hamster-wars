@@ -27,7 +27,7 @@ router.get('/:id', async (req, res) =>{
         return;
     }
     const data = docRef.data();
-    res.send(data);
+    res.status(200).send(data);
 })
 
 router.post('/', async (req, res) =>{
