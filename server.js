@@ -32,15 +32,6 @@ app.use('/winners', winners);
 
 app.use('/losers', losers);
 
-app.use((error, req, res, next) =>{
-    res.status(error.status || 500);
-    res.json({
-        error: {
-            message: error.message
-        }
-    })
-})
-
 app.listen(PORT, () => {
     console.log('Server is listening on port ' + PORT);
 });
